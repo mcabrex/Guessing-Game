@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Guessing Game</title>
+    <!-- Bootstrap and CSS here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='GuessingGame.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+
+  </head>
+
+  <body>
+
+    <div id='app' class='center'>
+
+      <div id='headers'>
+        <h1 id='title'>Guess the Number!</h1>
+        <h2 id='subtitle'>The idea of free will is rooted in the belief that our actions have an effect on the outcome.</h2>
+        <h3 id='message'>First choose a Person, then guess a Number!</h3>
+      </div>
+
+      <div id='main'>
+
+         <button id="eric" class='person-chooser'>Eric</button>
+         <button id="jessica" class='person-chooser'>Jessica</button>
+         <button id="ben" class='person-chooser'>Ben</button>
+         <button id="sam" class='person-chooser'>Sam</button>
+         <button id="robert" class='person-chooser'>Robert</button>
+         <button id="dawn" class='person-chooser'>Dawn</button>
+
+          <p id='dawn-text' class='center-text'>
+            Dawn was born blind, no getting around it.
+          </p>
+
+          <p id='robert-text' class='center-text'>
+            Robert lived a very plain life, and he liked it that way.
+          </p>
+
+          <p id='sam-text' class="center-text">
+            Sam grew up in a deeply religious but fairly progressive Christian community. As a result Sam has a very strong sense of right and wrong, her morals are uncompromisable.<br>
+            Sam's the type of person who would not hesitate to put herself in danger if it meant saving somebody else.<br>
+            So you can imagine the agonizing guilt she felt after the accident.<br>
+            'It's not your fault' - 'It could have happened to anybody' - 'I would have done the same'<br>
+            None of these words comforted her, if anything they further depressed her.<br>
+            Every time she closes her eyes she can see it. The man's face as her car hit him. The screech of the tires. The scream of the girl she swerved to avoid.<br>
+          </p>
+
+          <p id='ben-text' class='center-text'>
+            Ben's a cool guy, I would choose somebody else.
+          </p>
+
+          <p id='jessica-text' class='center-text'>
+            Jessica had only one reason for moving to America, money. Raised in a small village in the Philippines, her parents could barely afford to eat better yet pay for her nursing school tuition.<br>
+            With the hefty debt hanging over her head and the recent news that her father had ALS, Jessica decided to rush to America, stay at her aunt Mel's place, and find a job as fast as she could.<br>
+            Jessica believed that all she had to do was find a job in america and all of her problems would be solved. She can help support her family and then some!<br>
+            Without her, how could her parents pay off that tuition? Without her, how could they possibly afford the inevitable medical bills for her father?<br>
+            Jessica was her parent's pride and joy<br>
+            Without her, how could her parents go on?<br>
+          </p>
+
+          <p id='eric-text' class='center-text'>
+            Eric just started his first year of highschool. After his parent's divorce Eric was forced to follow his mother and move from his home town in Michigan to a small town in North Dakota.<br>
+            The cliques at North Valley Highschool have long since been forged and Eric's cynical nature coupled with his anti-social tendencies made him somewhat of a natural outcast.<br>
+            With no friends to speak of and no will to engage in any meaningful activities everyday was a miserable experience for Eric and his mother was far too tired working two jobs trying to support them to even notice.<br>
+            Go to school alone. Take classes alone. Eat lunch in a bathroom stall alone. Go home alone. Eat dinner alone.<br>
+            Alone. Alone. Alone. Alone.<br>
+            Every night Eric lays on his bed and thinks to himself "Perhaps this world would be better off without me."<br>
+            And perhaps it would be.<br>
+          </p>
+
+        <div id='input-parent' class='center'>
+          <input id='players-input' class='center' placeholder="guess a number." autofocus=autofocus></input>
+          <button id='submit'>GUESS</button>
+        </div>
+
+        <div id="menu-btns" class='center'>
+          <button id='reset'>Reset</button>
+          <button id='hint'>Hint</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id='footer' class="center">
+
+      <div class='row'>
+
+        <div class='col-sm-4'>
+          <img src='fa-logo@2x.png'></img>
+        </div>
+
+        <div class='col-sm-4'>
+          Project by Mario
+        </div>
+
+        <div class='col-sm-4'>
+          <img src='grace_hopper_academy.png'></img>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
