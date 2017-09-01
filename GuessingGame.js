@@ -58,9 +58,10 @@ Game.prototype.checkGuess = function() {
         if(this.pastGuesses.length === 5) {
           $('#title').text('The solution is very simple actually');
           $('#subtitle').text("You can only lose if you play")
-          $('#message').text('One guess left! Exciting stuff!')
+          $('#message').text('One guess left, One more chance. ')
         }
         if(this.pastGuesses.length === 6) {
+            $('#submit').css('color','red');
             $('#hint, #submit').prop("disabled",true);
             $('#subtitle').text("These are just procedurally generated strings of text though, did you even really win?")
             $('#message').text('Does it really even matter?')
@@ -84,7 +85,7 @@ Game.prototype.provideHint = function() {
     return shuffle(hintArray);
 }
 
-function shuffle(arr) { //Fisher-Yates - https://bost.ocks.org/mike/shuffle/
+function shuffle(arr) {
    for(var i = arr.length-1; i > 0; i--) {
        var randomIndex = Math.floor(Math.random() * (i + 1));
        var temp = arr[i];
@@ -146,9 +147,15 @@ $(document).ready(function() {
       killer('#dawn','#dawn-text');
     })
 
-    $('#players-input').keypress(function(event) {
-        if(event.which == 13){
+    $('#players-input').keypress(function(e) {
+        if(e.which == 13){
            makeAGuess(game);
+           killer('#eric','#eric-text');
+           killer('#jessica','#jessica-text');
+           killer('#ben','#ben-text');
+           killer('#sam','#sam-text');
+           killer('#robert','#robert-text');
+           killer('#dawn','#dawn-text');
         }
     })
 

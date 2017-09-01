@@ -39,8 +39,7 @@
       height: 65px;
   }
   body {
-    background-repeat: no-repeat;
-    background-position: contain;
+    background-size: cover;
     background-image: url(http://evangelicaloutpost.com/images/Stanley-Parable-Red-Door.jpg)
   }
   h4 {
